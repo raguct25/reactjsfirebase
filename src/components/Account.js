@@ -28,6 +28,7 @@ const AccountPage = () => (
 );
 
 // export default AccountPage;
-const authCondition = authUser => !!authUser && authUser.role === "ADMIN";
+// const authCondition = authUser => !!authUser && authUser.role === "ADMIN";
+const authCondition = authUser => !!authUser;
 
 export default withAuthorization(authCondition)(AccountPage);
